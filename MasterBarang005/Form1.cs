@@ -11,10 +11,10 @@ using System.Data.SqlClient;
 
 namespace MasterBarang005
 {
-    public partial class MasterBarang005 : Form
+    public partial class Form1 : Form
     {
         SqlConnection con = new SqlConnection(@" data source = DESKTOP-H0SV9CB\SQLEXPRESS; initial catalog = QuizMahasiswa;Integrated Security=True; ");
-        public MasterBarang005()
+        public Form1()
         {
             InitializeComponent();
         }
@@ -50,6 +50,11 @@ namespace MasterBarang005
 
         private void MasterBarang005_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'belajar.tbl_barang' table. You can move, or remove it, as needed.
+            this.tbl_barangTableAdapter.Fill(this.belajar.tbl_barang);
+            // TODO: This line of code loads data into the 'belajar.tbl_barang' table. You can move, or remove it, as needed.
+            this.tbl_barangTableAdapter.Fill(this.belajar.tbl_barang);
+
             con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select isnull(max (cast (ID as int)),0) +1 from TB_tbl_barang", con);
             DataTable dt = new DataTable();
