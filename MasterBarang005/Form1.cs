@@ -13,7 +13,7 @@ namespace MasterBarang005
 {
     public partial class MasterBarang005 : Form
     {
-        SqlConnection con = new SqlConnection(@" data source = DESKTOP-2QPI586\SQLEXPRESS01; initial catalog = QuizMahasiswa;Integrated Security=True; ");
+        SqlConnection con = new SqlConnection(@" data source = DESKTOP-H0SV9CB\SQLEXPRESS; initial catalog = QuizMahasiswa;Integrated Security=True; ");
         public MasterBarang005()
         {
             InitializeComponent();

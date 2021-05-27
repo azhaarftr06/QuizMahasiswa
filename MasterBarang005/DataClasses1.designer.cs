@@ -36,7 +36,7 @@ namespace MasterBarang005
     #endregion
 		
 		public DataClasses1DataContext() : 
-				base(global::MasterBarang005.Properties.Settings.Default.QuizMahasiswaConnectionString, mappingSource)
+				base(global::MasterBarang005.Properties.Settings.Default.QuizMahasiswaConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -191,7 +191,7 @@ namespace MasterBarang005
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nama_supplier", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nama_supplier", DbType="VarChar(1) NOT NULL", CanBeNull=false)]
 		public string nama_supplier
 		{
 			get
